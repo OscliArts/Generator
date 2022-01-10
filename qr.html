@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEN</title>
+    <link rel="shoertcut icon" href="logo.jpg" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="main">
+      <p>QR CODE</p>
+      <input type="text" class="input" />
+      <button class="btn">GENERATE</button>
+      <img src="qr.png" alt="" class="code" />
+      <a
+        href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${data}"
+        download="qr.png"
+        >DOWN</a
+      >
+      <p2>OS CREATIONS</p2>
+    </div>
+    <div id="toast">GENERATED</div>
+    <script src="main.js"></script>
+  </body>
+</html>
